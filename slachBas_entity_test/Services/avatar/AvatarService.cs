@@ -17,4 +17,10 @@ public class AvatarService : IAvatarService
         await _avatars.InsertOneAsync(avatar);
         return avatar;
     }
+
+
+    public Task<Avatar> FindByIdsAsync(string id)
+    {
+        throw new NotImplementedException();
+    }
 }
